@@ -83,6 +83,8 @@ npm start
 # 6. Acesso
 Acesse: http://localhost:4200
 
+```
+
 ### Estrutura do Projeto
 
 Korp_Teste_EduardoMartin/
