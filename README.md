@@ -1,4 +1,4 @@
-# 📝 Sistema NF - Gestão de Notas Fiscais# 📝 Sistema de Gestão de Notas Fiscais
+📝 Sistema NF - Gestão de Notas Fiscais
 
 
 
@@ -17,11 +17,6 @@
 
 
 **Sistema empresarial com arquitetura de microsserviços para gestão de produtos, estoque e notas fiscais**---
-
-
-
-[📖 Como Iniciar](#-início-rápido) • [🏗️ Arquitetura](#️-arquitetura) • [✨ Funcionalidades](#-funcionalidades)## 🎯 Visão Geral
-
 
 
 </div>Sistema empresarial desenvolvido com **microserviços** para gerenciar produtos, controlar estoque e emitir notas fiscais. Utiliza arquitetura moderna com backend em Go, frontend em Angular e banco de dados MariaDB.
