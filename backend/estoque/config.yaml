@@ -1,0 +1,39 @@
+# Configuração do Serviço de Estoque
+
+server:
+  port: ":3001"
+  mode: "debug" # debug, release
+
+database:
+  host: "localhost"
+  port: "3306"
+  user: "root"
+  password: ""
+  name: "notafiscal_desafio"
+  maxOpenConns: 25
+  maxIdleConns: 5
+  connMaxLifetime: 300 # segundos
+
+cors:
+  allowOrigins:
+    - "http://localhost:4200"
+    - "http://localhost:4201"
+  allowMethods:
+    - "GET"
+    - "POST"
+    - "PUT"
+    - "DELETE"
+    - "OPTIONS"
+  allowHeaders:
+    - "Content-Type"
+    - "Authorization"
+
+logging:
+  level: "info" # debug, info, warn, error
+  encoding: "json" # json, console
+  outputPaths:
+    - "stdout"
+    - "logs/estoque.log"
+  errorOutputPaths:
+    - "stderr"
+    - "logs/estoque-errors.log"

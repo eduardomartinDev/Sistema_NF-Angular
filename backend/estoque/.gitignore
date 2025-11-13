@@ -1,0 +1,29 @@
+# Binários compilados
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+main
+
+# Arquivos temporários do Air
+tmp/
+build-errors.log
+
+# Logs
+logs/
+*.log
+
+# Arquivos de teste
+*.test
+*.out
+
+# Dependências do Go
+vendor/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

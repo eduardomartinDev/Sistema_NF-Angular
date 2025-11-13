@@ -1,0 +1,51 @@
+# Configuração do Serviço de Faturamento
+
+server:
+  port: ":3002"
+  mode: "debug" # debug, release
+
+database:
+  host: "localhost"
+  port: "3306"
+  user: "root"
+  password: ""
+  name: "notafiscal_desafio"
+  maxOpenConns: 25
+  maxIdleConns: 5
+  connMaxLifetime: 300 # segundos
+
+services:
+  estoqueURL: "http://localhost:3001"
+
+cors:
+  allowOrigins:
+    - "http://localhost:4200"
+    - "http://localhost:4201"
+  allowMethods:
+    - "GET"
+    - "POST"
+    - "PUT"
+    - "DELETE"
+    - "OPTIONS"
+  allowHeaders:
+    - "Content-Type"
+    - "Authorization"
+
+logging:
+  level: "info" # debug, info, warn, error
+  encoding: "json" # json, console
+  outputPaths:
+    - "stdout"
+    - "logs/faturamento.log"
+  errorOutputPaths:
+    - "stderr"
+    - "logs/faturamento-errors.log"
+
+circuitBreaker:
+  maxRequests: 3
+  interval: 60 # segundos
+  timeout: 30 # segundos
+
+gemini:
+  apiKey: "AIzaSyCpqUlSK7_gaJJjxub6-YxqdshVcznLleI"
+  model: "gemini-2.0-flash-exp"
