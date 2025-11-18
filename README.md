@@ -61,8 +61,8 @@ Utiliza tecnologias modernas com **backend em Go**, **frontend em Angular** e **
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/eduardomartinDev/Korp_Teste_EduardoMartin.git
-cd Korp_Teste_EduardoMartin
+git clone https://github.com/eduardomartinDev/SISTEMA_NF.git
+cd SISTEMA_NF
 
 # 2. Configure o banco de dados
 mysql -u root -p < database.sql

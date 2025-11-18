@@ -3,7 +3,12 @@
 -- ========================================
 -- 
 -- Este script cria:
--- 1. Banco de dados 'korp_sistema'
+-- =============================================
+-- SCRIPT DE CRIAÇÃO DO BANCO DE DADOS
+-- Sistema de Gestão de Notas Fiscais
+-- =============================================
+
+-- 1. Banco de dados 'notafiscal_desafio'
 -- 2. Tabela de produtos (com imagem)
 -- 3. Tabela de notas fiscais
 -- 4. Tabela de itens das notas fiscais
@@ -286,7 +291,8 @@ DELIMITER ;
 -- FIM DO SCRIPT
 -- ========================================
 
-SELECT 'Banco de dados KORP criado com sucesso!' AS mensagem;
+-- Mensagem de sucesso
+SELECT 'Banco de dados criado com sucesso!' AS mensagem;
 SELECT COUNT(*) AS total_produtos FROM produtos;
 SELECT COUNT(*) AS total_notas FROM notas_fiscais;
 SELECT COUNT(*) AS total_itens FROM notas_itens;
